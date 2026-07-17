@@ -46,6 +46,6 @@ if st.button("Predict"):
     prediction = model.predict(X)
 
     if prediction[0][0] >= 0.45:
-        st.error("Customer is likely to stay.")
+        st.success("Customer is likely to stay.")
     else:
-        st.success("Customer is likely to churn.")
+        st.error("Customer is likely to churn.")
