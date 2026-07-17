@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import pickle
 from tensorflow.keras.models import load_model
-
 # Load model and scaler
 model = load_model("model.keras")
 preprocessor = pickle.load(open("preprocessor.pkl", "rb"))
